@@ -104,13 +104,12 @@ DATASET_PRESETS = {
               'test': 'validation',
               'crop': 384})
          }),
-    'acne04': ml_collections.ConfigDict(
+    'vit_acne04_ds': ml_collections.ConfigDict(
         {'total_steps': 1000,
          'pp': ml_collections.ConfigDict(
              {'train': 'train[:80%]',
               'test': 'test',
               'crop': 384}),
-          'dataset': 'home/bach/Bach/Coding/Python/Hackathon2023/acne04/acne04_Classification/vit_ds_class'
          }),
 }
 

@@ -74,9 +74,10 @@ def get_dataset_info(dataset, split):
     - examples_glob: Glob to select all files, or None (for tfds dataset).
   """
   directory = os.path.join(dataset, split)
+  print(os.path.isdir(directory))
   if os.path.isdir(directory):
     return get_directory_info(directory)
-  return get_tfds_info(dataset, split)
+  # return get_tfds_info(dataset, split)
 
 
 def get_datasets(config):
