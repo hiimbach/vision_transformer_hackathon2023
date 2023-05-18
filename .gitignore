@@ -4,3 +4,4 @@ __pycache__/
 /.env
 vit_jax.egg-info
 *.jpg
+checkpoint*
