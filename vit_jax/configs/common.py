@@ -105,11 +105,11 @@ DATASET_PRESETS = {
               'crop': 384})
          }),
     'vit_acne04_ds': ml_collections.ConfigDict(
-        {'total_steps': 1000,
+        {'total_steps': 0,
          'pp': ml_collections.ConfigDict(
              {'train': 'train[:80%]',
               'test': 'test',
-              'crop': 384}),
+              'crop': 640}),
          }),
 }
 
